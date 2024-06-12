@@ -1,12 +1,17 @@
-package com.mycompany.customexception;
-
+package CustomException.src.main.java.com.mycompany.customexception;
+//Custom Checked Exception
 class MyCheckedException extends Exception {
-    public MyCheckedException(String s){
+    public String getMessage;
+
+    public MyCheckedException(String s) {
         super(s);
     }
 }
+//Custom Unchecked Exception
 class MyUncheckedException extends RuntimeException{
-    public MyUncheckedException(String s){
+    public String getMessage;
+
+    public MyUncheckedException(String s) {
         super(s);
     }
 }
@@ -16,7 +21,7 @@ public class CustomException {
             throw new MyCheckedException("\nThrow Checked Exception.....");//throw is used when the user create Exception 
         }
         catch (MyCheckedException e) {
-            System.out.println("Caught Checked Exception... " + e.getLocalizedMessage());
+            System.out.println("Caught Checked Exception... " + e.getMessage());
         }
         try {
             throw new MyUncheckedException("\nThrow Unchecked Exception....");

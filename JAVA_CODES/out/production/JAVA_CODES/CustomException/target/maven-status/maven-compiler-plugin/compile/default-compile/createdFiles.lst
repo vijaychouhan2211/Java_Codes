@@ -1,0 +1,3 @@
+com\mycompany\customexception\MyUncheckedException.class
+com\mycompany\customexception\MyCheckedException.class
+com\mycompany\customexception\CustomException.class
