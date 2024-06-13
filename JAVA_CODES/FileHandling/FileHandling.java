@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 public class FileHandling {
     public static void main(String[] args) {
-        System.out.println("File Handling in Java");
+
         //Creating a File
+        System.out.println("File Handling in Java");
         File file = new File("Testfile.txt");
         try {
             file.createNewFile();
@@ -16,10 +17,9 @@ public class FileHandling {
         }
         System.out.println("File Created Successfully");
 
-
         //Writing inside the File
         try (FileWriter fw = new FileWriter("Testfile.txt");
-             BufferedWriter bw = new BufferedWriter(fw)){
+             BufferedWriter bw = new BufferedWriter(fw)) {
             bw.write("Reading from the Test file ");
             bw.close();
         } catch (IOException e) {
@@ -27,10 +27,10 @@ public class FileHandling {
         }
 
         //Reading the File
-        try(FileReader fr = new FileReader("Testfile.txt");
-            BufferedReader br = new BufferedReader(fr);) {
+        try (FileReader fr = new FileReader("Testfile.txt");
+             BufferedReader br = new BufferedReader(fr)) {
             Scanner sc = new Scanner(br);
-            while(sc.hasNextLine()) {
+            while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 System.out.println(line);
             }
@@ -48,4 +48,3 @@ public class FileHandling {
 //        }
     }
 }
-

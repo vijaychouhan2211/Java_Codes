@@ -1,4 +1,4 @@
-package com.mycompany.inheritance;
+package Inheritance.src.main.java.com.mycompany.inheritance;
 class Employee {
     String name;
     int emp_ID;
