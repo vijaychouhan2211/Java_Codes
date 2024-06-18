@@ -8,7 +8,7 @@ public class FileHandling {
 
         //Creating a File
         System.out.println("File Handling in Java");
-        File file = new File("Testfile.txt");
+        File file = new File("FileHandling/Testfile.txt");
         try {
             file.createNewFile();
             System.out.println("File Exists: " + file.exists());
@@ -18,16 +18,16 @@ public class FileHandling {
         System.out.println("File Created Successfully");
 
         //Writing inside the File
-        try (FileWriter fw = new FileWriter("Testfile.txt");
+        try (FileWriter fw = new FileWriter("FileHandling/Testfile.txt");
              BufferedWriter bw = new BufferedWriter(fw)) {
-            bw.write("Reading from the Test file ");
+            bw.write("Reading from the Test file \nHello Developer .....");
             bw.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         //Reading the File
-        try (FileReader fr = new FileReader("Testfile.txt");
+        try (FileReader fr = new FileReader("FileHandling/Testfile.txt");
              BufferedReader br = new BufferedReader(fr)) {
             Scanner sc = new Scanner(br);
             while (sc.hasNextLine()) {

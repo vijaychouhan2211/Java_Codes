@@ -11,6 +11,7 @@ import java.util.List;
 //Heterogeneous objects are allowed
 //The under laying data structure is double linked list.
 //Insertion order is preserved
+//** class ArrayList extends AbstractList implements List
 
 public class DemoArrayList {
     public static void main(String[] args) {
@@ -56,7 +57,7 @@ public class DemoArrayList {
 
         List<String> list3 = Arrays.asList("A", "B", "C");
         List<String> list4 = Arrays.asList("A", "B", "C");
-        System.out.println("-------------------------Comparison the slist-------------------------");
+        System.out.println("-------------------------Comparison the list-------------------------");
         System.out.println(list3 + "  " + list4);
         System.out.println("Both the list are same: " + list3.equals(list4)); // Output: true or false
 
@@ -66,6 +67,7 @@ public class DemoArrayList {
         arraylist.add("Ravi");//Adding object in arraylist
         arraylist.add("Vijay");
         arraylist.add("Ajay");
+        System.out.println(arraylist);
         //Traversing list through Iterator
         Iterator itr=arraylist.iterator();
         while (itr.hasNext())

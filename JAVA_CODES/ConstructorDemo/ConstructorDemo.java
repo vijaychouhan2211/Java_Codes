@@ -1,4 +1,4 @@
-package ConstructorChaining;
+package ConstructorDemo;
 
 //Implementation of Class And Object with the Example of dog class
 public class ConstructorDemo {

@@ -8,6 +8,7 @@ import java.util.LinkedList;
 //Heterogeneous objects are allowed
 //The under laying data structure is double linked list.
 //Insertion order is preserved
+//** Class LinkedList extends AbstractSequentialList implements List,Deque,Queue
 
 public class DemoLinkedList {
     public static void main(String[] args) {
