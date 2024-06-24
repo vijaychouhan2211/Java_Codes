@@ -1,8 +1,9 @@
 package Collection.Queue;
 
+import java.util.PriorityQueue;
 import java.util.Comparator;
 import java.util.Iterator;
-import java.util.PriorityQueue;
+
 
 //The PriorityQueue class implements the Queue interface.
 //It holds the elements or objects which are to be processed by their priorities.

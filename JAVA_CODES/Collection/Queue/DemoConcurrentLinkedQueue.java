@@ -8,7 +8,6 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class DemoConcurrentLinkedQueue {
     public static void main(String[] args) {
-        ConcurrentLinkedQueue<String> concurrentLinkedQueuequeue = new ConcurrentLinkedQueue<String>();
         ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();
         // Add elements to the queue
         queue.add(12);
