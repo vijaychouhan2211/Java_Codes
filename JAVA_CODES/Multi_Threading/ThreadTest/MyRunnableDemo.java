@@ -1,4 +1,4 @@
-package Multi_Threading.DemoThreadCase;
+package Multi_Threading.ThreadTest;
 
 class myRunnable implements Runnable {
     public void run() {
