@@ -1,6 +1,7 @@
 package Collection.Map;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 //1. It used to hold key value pairs
 //2. Underlying data Structure is HashTable.
@@ -11,24 +12,24 @@ import java.util.HashMap;
 
 public class DemoHashMap {
     public static void main(String[] args) {
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
-        map.put("A", 1);
-        map.put("B", 2);
-        map.put("C", 3);
-        map.put("D", 4);
-        map.put("E", 5);
-        map.put("F", 7);
-        map.put("F", 6);
+        HashMap<String, Integer> name = new HashMap<String, Integer>();
 
-        System.out.println(map);
-        System.out.println(map.get("A"));
-        System.out.println(map.containsKey("B"));
-        System.out.println(map.containsValue(7));
-        System.out.println(map.containsValue(6));
-        System.out.println(map.entrySet());
-        System.out.println(map.keySet());
-        System.out.println(map.values());
-        System.out.println(map.size());
+        name.put("Arun", 20);
+        name.put("David", 20);
+        name.put("Harry", 36);
+        name.put("Michael", 35);
+        name.put("Paul", 18);
+        name.put("Peter", 19);
+        name.put("Ryan", 29);
+        name.put("Robert", 39);
+        name.put("Sarah", 28);
+        name.put("David", 30);
+
+
+        System.out.println("Paul: " + name.get("Paul"));
+        int a = name.hashCode();
+        System.out.println("HashCode " + a);
+        System.out.println(name.entrySet());
 
     }
 }
