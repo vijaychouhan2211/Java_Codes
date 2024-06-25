@@ -42,20 +42,21 @@ class C extends Thread {
         }
     }
 }
+
 public class PriorityThreadExample {
     public static void main(String[] args) {
         System.out.println("Main is Statring");
 
         Thread A = new A();
-        Thread B = new B();
-        Thread C = new C();
-
         A.setPriority(Thread.MAX_PRIORITY);
-        B.setPriority(Thread.MIN_PRIORITY);
-        C.setPriority(Thread.NORM_PRIORITY);
-
         A.start();
+
+        Thread B = new B();
+        B.setPriority(Thread.MIN_PRIORITY);
         B.start();
+
+        Thread C = new C();
+        C.setPriority(Thread.NORM_PRIORITY);
         C.start();
 
     }
