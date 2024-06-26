@@ -11,23 +11,17 @@ class A extends Thread {
                 System.out.println("Hey!!");
                 Thread.sleep(3);
             }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
+        } catch (InterruptedException e) { throw new RuntimeException(e); }
     }
 }
 class B extends Thread {
     public void run() {
-
         try {
             for (int i = 0; i <= 50; i++) {
                 System.out.println("What's Up!!");
                 Thread.sleep(3);
             }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (InterruptedException e) { throw new RuntimeException(e); }
     }
 }
 class C extends Thread {
@@ -37,12 +31,9 @@ class C extends Thread {
                 System.out.println("!!!");
                 Thread.sleep(3);
             }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (InterruptedException e) { throw new RuntimeException(e); }
     }
 }
-
 public class PriorityThreadExample {
     public static void main(String[] args) {
         System.out.println("Main is Statring");
