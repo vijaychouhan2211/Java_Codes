@@ -8,13 +8,27 @@ package Multi_Threading.ThreadTest;
 
 class Mythread extends Thread {
 }
+class Demo extends Thread {
+    public void run() {
+        System.out.println("The run method executed by Thread: " + Thread.currentThread().getName());
+    }
+}
+
 public class ThreadName {
     public static void main(String[] args) {
+//        Mythread
         System.out.println(Thread.currentThread().getName());
         Mythread t = new Mythread();
         System.out.println(t.getName());
-        Thread.currentThread().setName("Duguu");
+        Thread.currentThread().setName("xyz");
         System.out.println(Thread.currentThread().getName());
 
+//        Demo
+        System.out.println("-------------------------------------");
+        Demo t1 = new Demo();
+        t1.start();
+        System.out.println("The run method executed by Thread: " + Thread.currentThread().getName());
+
+//NOTE: We can get current executing thread object by using Thread.currentThread() method.
     }
 }
