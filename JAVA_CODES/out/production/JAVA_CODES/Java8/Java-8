@@ -1,0 +1,141 @@
+Java-8
+---------------------
+1. Lambda Expression
+2. Functional Interface
+3. Default Methods and Static methods
+4. Predefined Functional Interfaces
+   Predicate
+   Function
+   Consumer
+   Supplier
+   etc
+5. Double Colon Operator(::)
+   Methods reference
+   Constructor reference
+6. Streams
+7. Date and Time API
+8. optional class
+9. Nashron JavaScript Engine
+etc
+--------------------------------------------------------------------------------
+1. Lambda Expression:
+---------------------
+1930 in Mathematics after that is slowly used in programming
+First programming language which used Lambda Expression is LISP
+
+---------------------------------------------------------
+Already in other languages like
+Python
+LISP
+C
+C++
+Ruby
+Scala
+Finally in java also in java8 version
+---------------------------------------------------------
+The main objective of Lambda Expression:
+To bring the benefits of functional prog ramming into java
+---------------------------------------------------------
+
+What is the Lambda Expression:
+~ It is an anonymous function
+	Nameless
+	Without return type
+	without modifiers
+--------------------------------------------------------
+eg1:
+public void m1(){
+	System.out.println("Hello");
+}
+
+Convert into Lambda Expression:
+[to create an Lambda Expression the sign is -> ]
+	() -> System.out.println("Hello"); // If body contend only one line then we can remove curly braces.
+() -> { System.out.println("hello");
+	System.out.println("Guy's");
+}  //If there is multiple line then curly braces are important
+
+eg2:
+public void m1(int a, int b){
+	System.out.println(a+b);
+}
+
+(int a, int b) -> System.out.println(a+b);
+
+( a, b) -> System.out.println(a+b); //Java compiler also inter the type of variable passed in arguments , hence type is optional.
+
+eg3:
+public void squareInt(int n){
+	return n*n;
+}
+
+(int n) -> { return n*n };  //if you went to use the return then you have to put return inside the curly braces
+(int n) -> n*n; //make sure that without curly brace if you went to return something then automatically return the value.
+(n) -> n*n ; //if the compiler can gas the type then you can remove the type also.
+n -> n*n ; //if only one parameter is there then parenthesis are optional.
+
+eg4:
+public void m1(String s){
+	return s.length();
+}
+
+s -> s.length();
+
+n -> return n*n; ==>invalid
+n -> {return n*n;}; ==>valid
+n -> {return n*n}; ==>invalid
+n -> {n*n;}; ==>invalid
+n -> n*n; ==>valid
+
+Without curly brace we cannot use return keyword. Compiler will consider returned value automatically.
+Within curly brace if we want to return some value compulsory we should use return statement.
+---------------------------------------------------------------------
+2. Functional Interface:
+-------------------------
+
+If the interface contains only one abstract methods then it is Functional Interface
+Or Functional Interface which contains single abstract method(SAM)
+Example:
+Runnable==>run()
+Comparable==>compareTo()
+CompareTo==>compare()
+ActionListener==>actionPerformed()
+Callable==>call()
+
+To call lambda we require functional interface.
+Lambda is used to implement function interface in very simple and short manner.
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
