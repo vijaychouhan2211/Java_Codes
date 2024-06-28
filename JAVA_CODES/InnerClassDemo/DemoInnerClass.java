@@ -1,17 +1,17 @@
 package InnerClassDemo;
 
 //outer class can not be static
-class A{
+class outerClass {
     void show() {
         System.out.println("Outer Class ");
     }
     //inner class
-     class B{
+     class innerClass1 {
         void disply() {
             System.out.println("Inner Class");
         }
         //static inner class
-        static class C{
+        static class innerClass2 {
             void out() {
                 System.out.println("Inner Static Class");
             }
@@ -21,13 +21,13 @@ class A{
 public class DemoInnerClass {
     public static void main(String[] args) {
         //obj of Outer class
-        A obj = new A();
+        outerClass obj = new outerClass();
         obj.show();
         //obj of inner class
-        A.B obj1 = obj.new B();
+        outerClass.innerClass1 obj1 = obj.new innerClass1();
         obj1.disply();
         //obj of Inner static class
-        A.B.C obj2 = new A.B.C();
+        outerClass.innerClass1.innerClass2 obj2 = new outerClass.innerClass1.innerClass2();
         obj2.out();
     }
 }

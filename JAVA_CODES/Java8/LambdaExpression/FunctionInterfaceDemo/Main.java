@@ -1,4 +1,4 @@
-package Java8.Interface;
+package Java8.LambdaExpression.FunctionInterfaceDemo;
 
 public class Main {
     public static void main (String [] args) {

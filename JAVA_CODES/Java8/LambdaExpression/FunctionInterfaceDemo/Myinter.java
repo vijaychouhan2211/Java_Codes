@@ -1,10 +1,8 @@
-package Java8.Interface;
+package Java8.LambdaExpression.FunctionInterfaceDemo;
 
 @FunctionalInterface
-public interface Myinter {
+ interface Myinter {
     public abstract void sayHello();
-
-
 }
 
 
