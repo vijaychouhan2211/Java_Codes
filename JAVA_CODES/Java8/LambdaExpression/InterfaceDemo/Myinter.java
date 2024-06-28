@@ -1,4 +1,4 @@
-package Java8.Interface;
+package Java8.LambdaExpression.InterfaceDemo;
 
 @FunctionalInterface
 public interface Myinter {
