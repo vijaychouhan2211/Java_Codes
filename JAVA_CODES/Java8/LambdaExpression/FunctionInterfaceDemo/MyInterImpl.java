@@ -1,4 +1,4 @@
-package Java8.LambdaExpression.InterfaceDemo;
+package Java8.LambdaExpression.FunctionInterfaceDemo;
 
 public class MyInterImpl implements Myinter {
     public void sayHello(){
