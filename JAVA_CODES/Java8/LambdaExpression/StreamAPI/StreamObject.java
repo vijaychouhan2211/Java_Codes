@@ -14,7 +14,7 @@ public class StreamObject {
 
         //1-blank
         Stream<Object> emptyStream  = Stream.empty(); //stream type of object
-        emptyStream.forEach(e ->{
+        emptyStream.forEach(e -> {
             System.out.println(e);
         });
 
@@ -26,12 +26,10 @@ public class StreamObject {
             System.out.println(e);
         });
 
-
         //3- Builder Pattern
         Stream<Object> streamBuilder = Stream.builder().build();
 
-
-        //4
+        //4 Arrays
         IntStream stream = Arrays.stream(new int[]{1,2,3});
         stream.forEach(e -> {
             System.out.println(e);
@@ -50,5 +48,7 @@ public class StreamObject {
         stream2.forEach(e -> {
             System.out.println(e);
         });
+
+
     }
 }

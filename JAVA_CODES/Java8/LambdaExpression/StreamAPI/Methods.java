@@ -1,12 +1,9 @@
 package Java8.LambdaExpression.StreamAPI;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static sun.nio.ch.DefaultSelectorProvider.get;
 
 public class Methods {
     public static void main(String[] args) {
@@ -15,15 +12,15 @@ public class Methods {
             //boolean value function
             // e -> e>10
 
-//        List<String> names = List.of("Vivek", "Ankit","Abhinav", "Raju", "Aditya", "Arun");
-//        List<String> newNames = names.stream().filter(e -> e.startsWith("A")).collect(Collectors.toList());
-//        System.out.println(newNames);
+        List<String> names = List.of("Vivek", "Ankit","Abhinav", "Raju", "Aditya", "Arun");
+        List<String> newNames = names.stream().filter(e -> e.startsWith("A")).collect(Collectors.toList());
+        System.out.println(newNames);
 
-//        names.stream().forEach(e -> {
-//            System.out.println(e);
-//        });
+        names.stream().forEach(e -> {
+            System.out.println(e);
+        });
 
-//        newNames.stream().forEach(System.out::println);
+        newNames.stream().forEach(System.out::println);
 
 
         //map(Function)
@@ -33,17 +30,16 @@ public class Methods {
         List<Integer> newNumbers = numbers.stream().map(e -> e * e).collect(Collectors.toList());
         System.out.println("map " + newNumbers);
 
-        //sort min max
-
+        //sorted
         numbers.stream().sorted().forEach(System.out::println);
 
+        //min
         Integer integer = numbers.stream().min(Comparator.naturalOrder()).orElse(null);
         System.out.println("min" + integer);
 
+        //max
         Integer integer1 = numbers.stream().max(Comparator.naturalOrder()).orElse(null);
         System.out.println("max " + integer1);
-
-        //
 
     }
 }
