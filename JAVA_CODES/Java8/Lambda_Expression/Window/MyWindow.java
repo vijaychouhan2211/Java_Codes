@@ -1,4 +1,4 @@
-package Java8.Window;
+package Java8.Lambda_Expression.Window;
 
 import javax.swing.*;
 import java.awt.*;

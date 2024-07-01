@@ -1,4 +1,4 @@
-package Java8.ThreadDemo;
+package Java8.Lambda_Expression.ThreadDemo;
 
 public class ThreadDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java8.StreamAPI;
+package Java8.Lambda_Expression.StreamAPI;
 
 import java.util.ArrayList;
 import java.util.Arrays;

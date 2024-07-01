@@ -1,4 +1,4 @@
-package Java8.SumByInterface;
+package Java8.Lambda_Expression.SumByInterface;
 
 @FunctionalInterface
 public interface SumInter {
